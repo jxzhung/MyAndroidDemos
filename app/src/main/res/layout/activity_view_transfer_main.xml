@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jzhung.demos.MainActivity">
+    <com.jzhung.demos.view.event.MyLinearLayout1
+        android:layout_width="match_parent"
+        android:background="#020878"
+        android:layout_height="match_parent">
+        <com.jzhung.demos.view.event.MyLinearLayout2
+            android:layout_margin="@dimen/view_margin"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:background="#4b5be2"
+            android:layout_height="match_parent">
+            <com.jzhung.demos.view.event.MyTextView
+                android:id="@+id/tv"
+                android:gravity="center"
+                android:text="Hello World!"
+                android:background="#69ba18"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.jzhung.demos.view.event.MyLinearLayout2>
+    </com.jzhung.demos.view.event.MyLinearLayout1>
+
+</LinearLayout>

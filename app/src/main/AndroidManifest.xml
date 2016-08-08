@@ -15,7 +15,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.event.MainActivity"></activity>
+        <activity android:name=".view.event.MainActivity" />
 
         <service
             android:name=".accessibility.AccessibilityDemoService"
@@ -23,10 +23,8 @@
             android:exported="true"
             android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" />
 
-        <activity android:name=".view.measure.MeasureActivity">
-
-
-        </activity>
+        <activity android:name=".view.measure.MeasureActivity"></activity>
+        <activity android:name=".anim.viewanimation.AnimationActivity"></activity>
     </application>
 
 </manifest>

@@ -11,10 +11,16 @@
     android:background="#e4deae"
     tools:context="com.jzhung.demos.MainActivity">
 
-    <ListView
-        android:id="@+id/lv"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></ListView>
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/contentLL"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </LinearLayout>
+    </ScrollView>
 
   <!--  <com.jzhung.demos.view.customview.MaoBiTextView
         android:id="@+id/mbTv"

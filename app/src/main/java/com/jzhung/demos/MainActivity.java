@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 
 import com.jzhung.demos.anim.viewanimation.AnimationActivity;
+import com.jzhung.demos.view.customview.CustomView1;
 
 public class MainActivity extends Activity {
     private LinearLayout contentLL;
@@ -17,7 +18,14 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         findViews();
-        initBtns();
+
+//        BatteryView battery = new BatteryView(this);
+//        battery.setBatteryOrientation(BatteryView.BatteryOrientation.HORIZONTAL);
+//        contentLL.addView(battery);
+
+        contentLL.addView(new CustomView1(this));
+
+        //initBtns();
     }
 
     private void initBtns() {
@@ -44,12 +52,4 @@ public class MainActivity extends Activity {
         startActivity(new Intent(this, target));
     }
 
-//    private void textUseCustomeFont(){
-//        MaoBiTextView mbTv = (MaoBiTextView) findViewById(R.id.mbTv);
-//        mbTv.setText("风一样的男人");
-//        mbTv.setTextSize(50);
-//        Typeface fontFace = Typeface.createFromAsset(getAssets(),
-//                "font/huawenxingkai.ttf");
-//        mbTv.setTypeface(fontFace);
-//    }
 }

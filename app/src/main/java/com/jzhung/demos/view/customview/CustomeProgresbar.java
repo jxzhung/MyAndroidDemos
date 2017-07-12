@@ -5,7 +5,7 @@ import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.jzhung.demos.PaintUtil;
+import com.jzhung.demos.util.PaintUtil;
 
 /**
  * Created by Jzhung on 2016/8/11.

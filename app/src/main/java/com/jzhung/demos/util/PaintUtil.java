@@ -1,4 +1,4 @@
-package com.jzhung.demos;
+package com.jzhung.demos.util;
 
 import android.graphics.Color;
 import android.graphics.Paint;

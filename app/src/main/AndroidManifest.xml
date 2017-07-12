@@ -3,16 +3,13 @@
     package="com.jzhung.demos">
 
     <application
+        android:name=".activity.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:supportsRtl="true"
-        android:name=".MyApplication">
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        android:supportsRtl="true">
+        <activity android:name=".activity.MainActivity">
+
         </activity>
         <activity android:name=".view.event.MainActivity" />
 
@@ -22,8 +19,15 @@
             android:exported="true"
             android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" />
 
-        <activity android:name=".view.measure.MeasureActivity"></activity>
-        <activity android:name=".anim.viewanimation.AnimationActivity"></activity>
+        <activity android:name=".view.measure.MeasureActivity" />
+        <activity android:name=".anim.viewanimation.AnimationActivity" />
+        <activity android:name=".view.customview.PathTestActivity"/>
+        <activity android:name=".activity.view.ViewPositionActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

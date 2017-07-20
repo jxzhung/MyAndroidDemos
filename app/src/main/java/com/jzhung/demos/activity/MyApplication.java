@@ -1,4 +1,4 @@
-package com.jzhung.demos;
+package com.jzhung.demos.activity;
 
 import android.app.Application;
 
